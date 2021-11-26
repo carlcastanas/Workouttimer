@@ -18,8 +18,8 @@ button {
 	bottom: 0px;
 	right:0px;
 	margin:auto;
-	height: 100vh;
-	width: 400px;
+        height: 100vh;
+	width: 100%;
 	z-index: 10;
 	background: #111;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to top, #333, #111);  /* Chrome 10-25, Safari 5.1-6 */
@@ -119,8 +119,8 @@ button {
 	bottom: 0px;
 	right:0px;
 	margin:auto;
-	height: 540px;
-	width: 300px;
+	height: 100vh;
+	width: 100%;
 	z-index: 9;
 	transition: all 0.4s;
 	background: #111;  /* fallback for old browsers */
@@ -136,7 +136,7 @@ button {
 	background: linear-gradient(to bottom, #00E676, #00C853); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	transition: all 0.4s;
 	height: 100vh;
-	width: 400px;
+	width: 100%;
 }
 #run.rest{
 	background: #4527A0;  /* fallback for old browsers */

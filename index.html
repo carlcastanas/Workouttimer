@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Workout Timer</title>
+  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://i.ibb.co/KN1FDp8/Pics-Art-08-25-03-06-14-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+	<form action="" id="set">
+	  <div class="section">
+	  	<div class="center">
+		  	<label>Rest </label>
+		  	<div class="input"><button onclick="changeQty('rest','minus'); return false;">-</button><input type="text" id="rest" value="5" readonly><button onclick="changeQty('rest','plus'); return false;">+</button></div>
+		  </div>
+		</div>
+	  <div class="section">
+	  	<div class="center">
+	  		<label>Reps </label>
+	  		<div class="input"><button onclick="changeQty('workout','minus'); return false;">-</button><input type="text" id="workout" value="5" readonly><button onclick="changeQty('workout','plus'); return false;">+</button></div>
+	  	</div>
+	  </div>
+	  <div class="section">
+	  	<div class="center">
+	  		<label>Times </label>
+	  		<div class="input"><button onclick="changeQty('intervals','minus'); return false;">-</button><input type="text" id="intervals" value="2" readonly><button onclick="changeQty('intervals','plus'); return false;">+</button></div>
+	  	</div>
+	  </div>
+	  <div class="buttons"><button id="start">start</button></div>
+	</form>
+
+	<div id="run">
+		<div class="chart" id="graph" data-percent="1" data-line="5" data-color="#34495e"></div>
+		<div id="title"></div>
+		<div id="timer"></div>
+		<div id="buttons">
+			<button id="stop">Stop</button>
+		</div>
+	</div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

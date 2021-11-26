@@ -1,0 +1,201 @@
+html {  box-sizing: border-box;}
+*, *:before, *:after { box-sizing: inherit;font-family: Helvetica;  }
+body { 
+	background: #fff;  /* fallback for old browsers */
+}
+button { 
+	border:0; 
+	border-radius: 0px; 
+	-moz-appearance:none; 
+	-webkit-appearance:none; 
+}
+
+
+#set { 
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right:0px;
+	margin:auto;
+	height: 100vh;
+	width: 400px;
+	z-index: 10;
+	background: #111;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #333, #111);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #333, #111); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border-radius: 15px;
+	overflow: hidden;
+    
+}
+
+#set .section { 
+	height: 30%; 
+	display: block; 
+	position: relative; 
+	overflow: hidden;
+}
+#set .section label { 
+	position: absolute; 
+	height: 100px;
+	text-align: center;
+	color: rgba(255,255,255,0.3);
+	font-size: 18px;
+	width: 100%;
+	font-weight: 700;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+#set .section .input { 
+	position: absolute; 
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	font-weight: bolder;
+	text-transform: uppercase;
+	background: none;
+	border:0px;
+	height: 100px;
+	line-height: 100px;
+}
+#set .section .input button {
+	display: inline-block;
+	width: 40px;
+	font-size: 20px;
+	height: 40px;
+	vertical-align: middle;
+	cursor: pointer;
+	background:none;
+	border:0;
+	color: #fff;
+	border:1px #fff solid;
+	border-radius: 100%;
+}
+#set .section .input input {
+	display: inline-block;
+	width: 20%;
+	font-size: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	font-weight: bolder;
+	text-transform: uppercase;
+	background: none;
+	border:0px;
+	width: 40%;
+	vertical-align: middle;
+}
+#set .buttons { 
+	height: 10%; 
+	position: relative;
+	background:rgba(0,0,0,0.2);
+}
+#set .buttons button {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%; height: 100%;
+	background:none;
+	color: red;
+	font-size: 32px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: #fff;
+}
+.center {
+	width: 100%;
+	height: 100px;
+	overflow: auto;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+#run {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right:0px;
+	margin:auto;
+	height: 540px;
+	width: 300px;
+	z-index: 9;
+	transition: all 0.4s;
+	background: #111;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #333, #111);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #333, #111); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0px 30px 50px rgba(0,0,0,0.4);
+}
+#run.go{
+	background: #00C853;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #00E676, #00C853);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #00E676, #00C853); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	transition: all 0.4s;
+	height: 100vh;
+	width: 400px;
+}
+#run.rest{
+	background: #4527A0;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #512DA8, #4527A0);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #512DA8, #4527A0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	transition: all 0.4s;
+	height: 100vh;
+	width: 400px;
+}
+#graph {
+	width: 240px;
+	height: 240px;
+	overflow: hidden;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+#timer {
+	width: 240px;
+	height: 240px;
+	overflow: hidden;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	text-align: center;
+	line-height: 250px;
+	font-size: 120px;
+	font-weight: 900;
+	color: #fff;
+}
+#title {
+	position: absolute; 
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	font-size: 70px;
+	padding:30px 0;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+#run #buttons{
+	height: 10%; 
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	background:rgba(0,0,0,0.2);
+}
+#run #buttons button {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%; height: 100%;
+	color: #fff;
+	font-size: 32px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	background:rgba(0,0,0,0.1);
+}
